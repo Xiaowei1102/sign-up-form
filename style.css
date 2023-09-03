@@ -10,6 +10,7 @@ body {
 .background-image {
     position: relative;
     max-height: 100vh;
+    height: auto;
     
 }
 
@@ -21,4 +22,67 @@ body {
     top: 30%;
     left: 35%;
     opacity: 0.5;
+}
+
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.textcontainer1 {
+    padding-left: 20px;
+    background-color: #E5E7EB;
+    flex: 1.5 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+form {
+    padding-left: 20px;
+    background-color: white;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttoncontainer {
+    padding-left: 20px;
+    background-color: #E5E7EB;
+}
+
+.infocontainer {
+    flex: 2 1 auto;
+}
+
+form>p {
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.buttoncontainer {
+    flex: 1.5 1 auto;
+}
+
+.infocontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.name, .contactinfo, .password {
+    display: flex;
+    gap: 10%;
+}
+
+label, input {
+    display: block;
+}
+
+button {
+    background-color: #596D48;
 }
