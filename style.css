@@ -34,12 +34,18 @@ body {
 
 .textcontainer1 {
     padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
     background-color: #E5E7EB;
     flex: 1.5 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     
+}
+
+.secondp {
+    margin-bottom: 50px;
 }
 
 form {
@@ -79,10 +85,42 @@ form>p {
     gap: 10%;
 }
 
+label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
 label, input {
     display: block;
 }
 
 button {
     background-color: #596D48;
+}
+
+input {
+    border: 1.5px solid #E5E7EB;
+    border-radius: 5px;
+    height: 25px;
+}
+
+input:focus {
+    border: 1.5px solid #335fdb;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.37) 1.95px 1.95px 2.6px;
+}
+
+.error {
+    color: red;
+    font-size: 10px;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
 }

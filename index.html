@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <script src="javascript.js" defer></script>
     <div class="image-container">
         <img class= "background-image" src="unsplash.jpg" alt="unsplash leaves">
         <img class="logo" src="odin-lined.png" alt="odin logo">
     </div>
     <div class="formcontainer">
         <div class="textcontainer1">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-            <p>You know you want to.</p>
+            <p class="firstp">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+            <p class="secondp">You know you want to.</p>
         </div>
 
         <form id="form1" action="/sign-up-form-page" method="post">
@@ -43,12 +44,13 @@
                 </div>
                 <div class="password">
                     <div class="password1">
-                        <label for="pwd">PASSWORD</label>
-                        <input type="password" name="password" id="pwd">
+                        <label for="pwd1">PASSWORD</label>
+                        <input type="password" name="password" id="pwd1">
+                        <span class="error"></span>
                     </div>
                     <div class="password2">
-                        <label for="pwd">CONFIRM PASSWORD</label>
-                        <input type="password" name="password" id="pwd">
+                        <label for="pwd2">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm" id="pwd2" onkeyup="check()">
                     </div>
                 </div>
             </div>
